@@ -1,0 +1,36 @@
+{
+    "name": "UnitBV Container",
+    "image": "ubuntu:22.04",
+    "initializeCommand": "bash .devcontainer/initialize_command.sh",
+    "postCreateCommand": "bash .devcontainer/post_create.sh",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/developer/${localWorkspaceFolderBasename},type=bind",
+    "workspaceFolder": "/home/developer/${localWorkspaceFolderBasename}",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+      },
+    "runArgs": [
+        "--hostname",
+        "UnitBV-container",
+        "--env-file",
+        "${localWorkspaceFolder}/.devcontainer/timezone.env"
+    ],
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+                "extensions": [
+                    "rust-lang.rust-analyzer",
+                    "GitHub.copilot"
+                ],
+                "settings": {
+                    "rust-client.channel": "stable"
+                }
+        }
+    },
+    "containerUser": "root",
+    "remoteUser": "root",
+    "containerEnv": {
+        "RUST_BACKTRACE": "1"
+    },
+    "forwardPorts": [8080]
+}
