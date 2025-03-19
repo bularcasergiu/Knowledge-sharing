@@ -20,3 +20,8 @@ Docker is a platform for developing, shipping, and running applications in conta
 Vscode Remote - Containers allows you to use a Docker container as a full-featured development environment.
 * how to use Vscode Remote - Containers : https://code.visualstudio.com/docs/remote/containers
 
+## GitHub Copilot
+GitHub Copilot is an AI pair programmer that helps you write code faster.
+* is free for students : https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student
+  * if add your student email addres may work: name.family_name@student.unitbv.ro
+* how to use GitHub Copilot in VSCode: https://code.visualstudio.com/docs/copilot/setup-simplified

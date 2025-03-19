@@ -1,0 +1,5 @@
+# Ignore the generated artifactory.conf file
+artifactory.conf
+
+# Ignore the copied .gitconfig file
+.gitconfig
