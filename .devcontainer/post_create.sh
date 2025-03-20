@@ -4,8 +4,8 @@
 # Source the environment variables
 set -eu
 
-# Install gdb
-sudo apt-get update && sudo apt-get install -y gdb netcat
+# Install gdb and build-essential
+sudo apt-get update && sudo apt-get install -y gdb netcat build-essential
 
 # rust installation
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
